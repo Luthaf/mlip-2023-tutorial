@@ -1,0 +1,13 @@
+name: metatensor-mlip-2023
+dependencies:
+  - python=3.11
+  - pip
+  - rust
+  - cmake
+  - pip:
+    - ase
+    - chemiscope
+    - jupyter
+    - jupyterlab
+    - scikit-learn
+    - wheel
