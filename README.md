@@ -34,4 +34,7 @@ cd mlip-2023-tutorial
 conda env create --file install/environment.yaml
 conda activate metatensor-mlip-2023
 ./install/extra-pip-packages.sh
+
+# if you want to run the LAMMPS-md notebook
+./install/build-lammps.sh
 ```

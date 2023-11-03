@@ -1,0 +1,4 @@
+ethanol.lmp
+run.in
+log.lammps
+trajectory.xyz
