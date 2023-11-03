@@ -14,5 +14,5 @@ pip install --no-build-isolation "metatensor-core @ git+https://github.com/Lutha
 pip install --no-build-isolation "metatensor-torch @ git+https://github.com/Luthaf/metatensor@7d095c9#subdirectory=python/metatensor-torch"
 pip install --no-build-isolation "metatensor-operations @ git+https://github.com/Luthaf/metatensor@7d095c9#subdirectory=python/metatensor-operations"
 
-pip install --no-deps --no-build-isolation "rascaline @ git+https://github.com/Luthaf/rascaline@1ab0611"
-pip install --no-deps --no-build-isolation "rascaline-torch @ git+https://github.com/Luthaf/rascaline@1ab0611#subdirectory=python/rascaline-torch"
+pip install --no-deps --no-build-isolation "rascaline @ git+https://github.com/Luthaf/rascaline@6eda441"
+pip install --no-deps --no-build-isolation "rascaline-torch @ git+https://github.com/Luthaf/rascaline@6eda441#subdirectory=python/rascaline-torch"
