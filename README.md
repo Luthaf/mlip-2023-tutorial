@@ -35,6 +35,7 @@ conda env create --file install/environment.yaml
 conda activate metatensor-mlip-2023
 ./install/extra-pip-packages.sh
 
-# if you want to run the LAMMPS-md notebook
+# OPTIONAL, only run if you want to run the last notebook
+# (running metatensor models inside LAMMPS)
 ./install/build-lammps.sh
 ```

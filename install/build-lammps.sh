@@ -13,6 +13,7 @@ rm -rf lammps
 git clone --depth 1 https://github.com/Luthaf/lammps --branch ml-metatensor --single-branch
 cd lammps
 
+ENV_ROOT=$(realpath "$(dirname "$(which python)")"/..)
 
 mkdir build && cd build
 cmake \
@@ -21,7 +22,8 @@ cmake \
     -DPKG_MOLECULE=ON \
     -DPKG_KSPACE=ON \
     -DCMAKE_PREFIX_PATH="$TORCH_CMAKE_PREFIX;$METATENSOR_CMAKE_PREFIX;$METATENSOR_TORCH_CMAKE_PREFIX;$RASCALINE_CMAKE_PREFIX;$RASCALINE_TORCH_CMAKE_PREFIX" \
-    -DCMAKE_INSTALL_PREFIX="$(realpath "$(dirname "$(which python)")"/..)" \
+    -DCMAKE_INSTALL_PREFIX="$ENV_ROOT" \
+    -DCMAKE_INSTALL_RPATH_USE_LINK_PATH=ON \
     ../cmake
 
 cmake --build . --target install -j 10
