@@ -1,4 +1,4 @@
-ethanol.lmp
+propanol.lmp
 run.in
 log.lammps
 trajectory.xyz
